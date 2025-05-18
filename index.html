@@ -7,15 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Debotro's 1st Website</title>
   <style>
-   
-    .green{background-color: chartreuse; color: black;}
-   .box1{
-    background-color: antiquewhite;
-    margin: 2px;
-    border: 2px solid black;
-    padding-top: 10px;
-   }
-     .devices{color: black;}
+    body {
+      text-align: center;
+    }
+
+    .green {
+      background-color: chartreuse;
+      color: black;
+      display: inline-block;
+    }
+
+    .box1 {
+      display: inline-block;
+      background-color: antiquewhite;
+      margin: 2px;
+      border: 2px solid black;
+      padding: 10px 20px;
+    }
+
+    .devices {
+      color: black;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;}
+
+      .bookmarks {
+      text-align: left;
+      margin-left: 20px;
+    }
+    .bookmarks a:hover{color: red;}
   </style>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style1.css">
@@ -24,7 +51,7 @@
 <body>
   <video src="welcome.mp4" width="395" controls autoplay loop></video>
 
- <h1 class="box1">Hey! This Is My 1st Website.</h1>
+ <h1><span class="box1">Hey! This Is My 1st Website.</span></h1>
   <h2>Want to hear a sad song?</h2>
   <audio src="Ae dil hai mushkil.mp3" controls></audio>
   <h2>About Me - Debotro Dey</h2>
@@ -58,50 +85,34 @@
       <td colspan="4">Mother</td>
     </tr>
   </table>
-  <h3>My Bookmarks</h3>
-  <a target="_blank" href="https://www.google.com">
+  <div class="bookmarks">
+    <h3>My Bookmarks</h3>
     <ul>
-      <li>Google</li>
+      <li><a target="_blank" href="https://www.google.com">Google</a></li>
+      <li><a target="_blank" href="https://www.facebook.com">Facebook</a></li>
+      <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
+      <li><a target="_blank" href="https://web.whatsapp.com/">Whatsapp</a></li>
+      <li><a target="_blank" href="https://www.youtube.com">YouTube</a></li>
     </ul>
-  </a>
-  <a target="_blank" href="https://www.Fackbook.com">
-    <ul>
-      <li>Facebook</li>
-    </ul>
-  </a>
-  <a target="_blank" href="https://www.instagram.com">
-    <ul>
-      <li>Instagram</li>
-    </ul>
-  </a>
-  <a target="_blank" href="https://web.whatsapp.com/">
-    <ul>
-      <li>Whatsapp</li>
-    </ul>
-  </a>
-  <a target="_blank" href="https://www.Youtube.com">
-    <ul>
-      <li>Youtube</li>
-    </ul>
-  </a>
+  </div>
   <h3>Fill The Form Just For Fun</h3>
   <form action="post">
     <h4 class="green">Enter your name:</h4>
     <div>
-      <label for="username">  </label>
+      <label for="username"> </label>
       <input type="text" id="username" name="username" placeholder="eg. Debotro Dey">
     </div>
     <span id="seconddiv" class="blue bg-blue">
       <input type="radio" id="male" name="gender" value="male">
       <label for="male">Male </label>
     </span>
-      <span id="firstdiv" class="pink bg-pink">
+    <span id="firstdiv" class="pink bg-pink">
       <input type="radio" id="female" name="gender" value="female">
       <label for="female">Female</label>
-      </span>
+    </span>
     <div>
       <input type="checkbox" id="username" name="username" value="yes">
-<label1 for="username">Filled the form?</label1>
+      <label1 for="username">Filled the form?</label1>
     </div>
     <div>
       <textarea name="comment" rows="4" cols="50">
@@ -110,11 +121,12 @@
     </div>
     <div>
       <span class="devices">Device:</span>
-      <option value="Apple">Apple</option>
-      <option value="Android">Android</option>
-      <option value="Mac">Mac</option>
-      <option value="Windows">Windows</option>
-      <option value="Linux">Linux</option>
+      <select name="Device">
+        <option value="Apple">Apple</option>
+        <option value="Android">Android</option>
+        <option value="Mac">Mac</option>
+        <option value="Windows">Windows</option>
+        <option value="Linux">Linux</option>
     </div>
   </form>
 
