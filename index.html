@@ -27,8 +27,12 @@
       white-space: nowrap;
       border-right: 2px solid black;
       width: 0;
-      animation: typing 4s steps(30, end) forwards;
       font-size: large;
+      /* no animation by default */
+    }
+
+    .box1.animate {
+      animation: typing 4s steps(30, end) forwards;
     }
 
     @keyframes typing {
@@ -40,6 +44,7 @@
         width: 100%;
       }
     }
+
 
 
     .devices {
@@ -83,23 +88,19 @@
 
     .para1 {
       opacity: 0;
-      animation: fadeIn 10s ease-in forwards;
-      font-size: larger;
-      font-weight: bold;
+      transition: opacity 5s ease-in-out;
+      /* other styles you already have */
+      display: inline-block;
       background-color: aqua;
       color: black;
       border: 2px solid black;
-      padding: 10px;
-      margin: 10px auto;
-      max-width: 600px;
-      /* optional, to keep paragraph readable */
-      text-align: center;
+      font-size: larger;
+      font-weight: bold;
+      /* no typing animation here */
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+    .para1.animate {
+      opacity: 1;
     }
   </style>
   <link rel="stylesheet" href="style.css">
@@ -203,5 +204,3 @@
 </body>
 
 </html>
-
-
