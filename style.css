@@ -1,0 +1,134 @@
+body {background-color: rgb(255, 250, 98);
+color: rgb(7, 0, 146);}
+label{ color: aliceblue;}
+label1{color: black;}
+nav ul {
+  list-style: circle;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 5px 0;
+}
+nav{
+  text-align: left;
+  padding: 20px;
+}
+nav a {
+  color: black; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: red;
+}
+
+    .green {
+      background-color: chartreuse;
+      color: black;
+      display: inline-block;
+    }
+
+    .box1 {
+      display: inline-block;
+      background-color: antiquewhite;
+      color: rgb(146, 83, 0);
+      margin: auto;
+      border: 2px solid black;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid black;
+      width: 100%;
+      font-size: large;
+      box-shadow: -5px 8px 5px #643a0078;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+td{
+    border: 2px solid black;}
+
+#firstdiv{background-color: rgb(255, 0, 255);}
+
+#seconddiv{background-color: blue;}
+    .box1.animate {
+      animation: typing 4s steps(30, end) forwards;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+
+
+    .devices {
+      color: black;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .mybookmarks{
+        color: black;
+    }
+    
+    .bookmarks {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .bookmarks a:hover {
+      color: red;
+    }
+
+    .welcome {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .Debotro2 {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .para1 {
+      opacity: 0;
+      transition: opacity 5s ease-in-out;
+      width: 90vw;
+      height: 30vh;
+      overflow: auto;
+      text-overflow: ellipsis;
+      display: inline-block;
+      background-color: aqua;
+      color: black;
+      border: 2px solid black;
+      font-size: larger;
+      font-weight: bold;
+      
+    }
+
+    .para1.animate {
+      opacity: 1;
+    }
+
