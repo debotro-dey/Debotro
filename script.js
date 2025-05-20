@@ -1,3 +1,4 @@
+// Check if element is fully in viewport
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -8,6 +9,7 @@ function isInViewport(element) {
   );
 }
 
+// Add animate class when element comes into view
 function animateOnScroll(selector) {
   const element = document.querySelector(selector);
   if (element && !element.classList.contains('animate') && isInViewport(element)) {
@@ -15,12 +17,13 @@ function animateOnScroll(selector) {
   }
 }
 
+// Listen to scroll and DOMContentLoaded for animations
 document.addEventListener('scroll', () => {
-  animateOnScroll('.box1');   // triggers typing animation
-  animateOnScroll('.para1');  // triggers fade-in animation
+  animateOnScroll('.box1');
+  animateOnScroll('.para1');
 });
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   animateOnScroll('.box1');
   animateOnScroll('.para1');
 });
