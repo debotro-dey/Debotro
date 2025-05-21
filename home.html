@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="This is a description about Debotro Dey" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debotro's 1st Website</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+  <header>
+    <div class="site-title">&copy; Debotro Dey</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="bookmarks.html">Bookmarks</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="welcome-vid">
+    <video class="welcome" src="welcome.mp4" autoplay loop muted playsinline></video>
+  </div>
+
+  <h1><span class="box1">Hey! This Is My 1st Website.</span></h1>
+
+  <h2>Want to hear some sad songs?</h2>
+  <ol>
+    <li><audio src="Ae dil hai mushkil.mp3" controls></audio></li>
+    <li><audio src="Bekhayali.mp3" controls></audio></li>
+    <li><audio src="Milne hai mujhse ayi.mp3" controls></audio></li>
+  </ol>
+  
+
+  <h3>Fill The Form Just For Fun</h3>
+  <form action="post">
+    <h4 class="green">Enter your name:</h4>
+    <div>
+      <label for="username"> </label>
+      <input type="text" id="username" name="username" placeholder="eg. Debotro Dey" />
+    </div>
+    <span id="seconddiv" class="blue bg-blue">
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male </label>
+    </span>
+    <span id="firstdiv" class="pink bg-pink">
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+    </span>
+    <div>
+      <input type="checkbox" id="filled" name="filled" value="yes" />
+      <label for="filled">Filled the form?</label>
+    </div>
+    <div>
+      <textarea name="comment" rows="4" cols="50">Write your experience...</textarea>
+    </div>
+    <div>
+      <span class="devices">Device:</span>
+      <select name="Device">
+        <option value="Apple">Apple</option>
+        <option value="Android">Android</option>
+        <option value="Mac">Mac</option>
+        <option value="Windows">Windows</option>
+        <option value="Linux">Linux</option>
+      </select>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
