@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eaf2f7;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #2980b9;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  user-select: none;
+}
+
+.nav-menu {
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Music Section */
+main {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.musics {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Increase the size of the list numbers */
+.music-list {
+  list-style: decimal inside;
+  padding-left: 0;
+}
+.music-list li {
+  margin-bottom: 25px;
+}
+
+/* Styling the marker for better legibility */
+.music-list li::marker {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #000000;
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 220px;
+    z-index: 999;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #2980b9;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    align-items: center;
+  }
+
+  #menu-toggle:checked ~ .nav-menu .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .menu-toggle {
+    order: 2;
+  }
+}
+.btn-back {
+  display: inline-block;
+  margin-top: 30px;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.btn-back:hover {
+  color: #1e3a8a;
+}

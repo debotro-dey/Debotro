@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacts</title>
+  <link rel="stylesheet" href="contacts.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">&copy; Debotro Dey</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="bookmarks.html">Bookmarks</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="contact-container">
+    <img src="Debotro1.png" alt="Profile Picture" class="profile-pic" />
+    <h2>Contact Info:</h2>
+    <div class="contact-details">
+    <p><strong>Email:</strong> deydebotro946@gmail.com 
+      <button onclick="copyToClipboard('deydebotro946@gmail.com')">📋</button>
+    </p>
+    <p><strong>Phone:</strong> 6291635780 
+      <button onclick="copyToClipboard('6291635780')">📋</button>
+    </p>
+    <p><strong>Location:</strong> Shantinagar, Tollygunge, Kolkata, West Bengal</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/tddebxx_/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61551023518877" target="_blank">Facebook</a>
+    </div>
+  </main>
+
+  <a href="index.html" class="btn-back">← Back to Home</a>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+      });
+    }
+  </script>
+</body>
+</html>
